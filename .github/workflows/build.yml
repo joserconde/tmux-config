@@ -38,7 +38,7 @@ jobs:
           cd tmux-$VERSION
           LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/usr/local
           make
-          make install
+          sudo make install
           cd ..
           rm -rf tmux-$VERSION
       - name: Install tmux-config
