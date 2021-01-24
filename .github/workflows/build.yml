@@ -47,3 +47,7 @@ jobs:
           git clone https://github.com/joserconde/tmux-config.git \
           ./tmux-config/install.sh
           rm -rf ./tmux-config
+      - name: Test configuration in tmux ${{ matrix.tmux-version }}
+        run: |
+          tmux new-session -d -s test
+          tmux kill-session -t test
