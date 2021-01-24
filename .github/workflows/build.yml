@@ -27,7 +27,7 @@ jobs:
       - name: Install prerequisites
         run: |
           apt-get update
-          apt-get install -y --no-install-recommends ca-certificates fontconfig git gcc iputils-ping libevent-dev libncurses-dev locales make procps wget
+          sudo apt-get install -y --no-install-recommends ca-certificates fontconfig git gcc iputils-ping libevent-dev libncurses-dev locales make procps wget
 
       # Runs a set of commands using the runners shell
       - name: Compile tmux version ${{ matrix.tmux-version }}
