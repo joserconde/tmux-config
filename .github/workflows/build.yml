@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        tmux-version: [3.0a]
+        tmux-version: [2.6, 2.7, 2.8, 2.9, 3.0a]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
